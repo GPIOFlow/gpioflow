@@ -1,0 +1,70 @@
+GPIOFlow License Agreement
+=========================
+
+Copyright (c) 2026 GPIOFlow
+All rights reserved.
+
+This license applies exclusively to the GPIOFlow software,
+including the application WAR file, frontend assets, backend logic,
+configuration, and related proprietary components.
+
+------------------------------------------------------------
+
+1. Grant of License
+
+Permission is granted to install and use GPIOFlow on Raspberry Pi devices
+for personal or commercial purposes, provided that this license is accepted.
+
+------------------------------------------------------------
+
+2. Restrictions
+
+The GPIOFlow software may NOT be:
+
+- redistributed, resold, sublicensed, or shared
+- made publicly available
+- modified, reverse engineered, decompiled, or disassembled
+
+without explicit prior written permission from the copyright holder,
+except where such restriction is prohibited by applicable law.
+
+------------------------------------------------------------
+
+3. Distribution with System Images
+
+GPIOFlow may be distributed by the copyright holder as part of a
+preconfigured system image or installer.
+
+This license does NOT apply to third-party software components
+included in such images, which remain subject to their respective
+open-source licenses.
+
+------------------------------------------------------------
+
+4. License Tiers
+
+Certain editions (e.g. Lite) may contain functional limitations.
+Access to advanced or Pro features may require a valid license key.
+
+------------------------------------------------------------
+
+5. Warranty Disclaimer
+
+This software is provided "as is", without warranty of any kind,
+express or implied, including but not limited to the warranties of
+merchantability, fitness for a particular purpose, or non-infringement.
+
+------------------------------------------------------------
+
+6. Limitation of Liability
+
+In no event shall the copyright holder be liable for any claim,
+damages, or other liability arising from the use or inability to use
+this software.
+
+------------------------------------------------------------
+
+7. Acceptance
+
+By installing, copying, or using GPIOFlow, you agree to be bound
+by the terms of this license agreement.
