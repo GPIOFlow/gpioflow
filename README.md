@@ -85,3 +85,19 @@ info@gpioflow.com
 ## 📸 Screenshots & Demo
 
 Screenshots and a live demo are available on the official website.
+
+---
+
+## 📄 Third-Party Software Notice
+
+GpioFlow is distributed as a preconfigured image or installer
+and includes third-party open-source software components
+(e.g. Raspberry Pi OS, Java, Tomcat, MariaDB, pigpio).
+
+These components are distributed under their respective
+open-source licenses and are not owned by the author of GpioFlow.
+
+The proprietary GpioFlow application (WAR file, frontend, backend
+logic, configuration) remains the intellectual property of the author
+and is not open source.
+
