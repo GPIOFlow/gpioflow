@@ -1,7 +1,23 @@
 # DISCLAIMER
 
-GPIOFlow is intended for hobby, maker, and non-critical applications only. It is **not** designed, tested, or suitable for use in safety-critical, life-support, or mission-critical systems. The developer is not responsible for any damages, injuries, or losses resulting from improper use, faulty wiring, or hardware failures.
+GPIOFlow is intended for hobby, maker, and non-critical applications only.
+It is **not** designed, tested, or suitable for use in safety-critical, life-support,
+or mission-critical systems. The developer is not responsible for any damages, injuries,
+or losses resulting from improper use, faulty wiring, or hardware failures.
 
-By using this software, you acknowledge that you do so at your own risk. The software is provided "as-is," and no warranties or guarantees of any kind are made regarding its functionality, reliability, or safety.
+By using this software, you acknowledge that you do so at your own risk.
+The software is provided "as-is," and no warranties or guarantees of any kind 
+are made regarding its functionality, reliability, or safety.
 
-Use GPIOFlow only in appropriate environments where failure would not result in harm, injury, or significant damage. The developer disclaims all liability for any damage caused by the software, including data loss, system failures, or hardware malfunctions.
+GPIO pins on the Raspberry Pi provide 3.3 V control signals only.
+Connecting high-current or high-voltage devices directly to GPIO pins
+can permanently damage the Raspberry Pi or connected hardware.
+Always use appropriate external drivers, relays, or protection circuits.
+Never power external devices from GPIO pins. Always use suitable driver circuits 
+and an external power supply for the connected hardware.
+
+
+Use GPIOFlow only in environments where failure would not result in harm,
+injury, or significant damage. The developer disclaims all liability for
+any damage, including data loss, system failures, hardware damage,
+or personal injury resulting from improper use.
