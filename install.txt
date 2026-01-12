@@ -156,7 +156,7 @@ EOF
 
 # Setze sichere Rechte
 sudo chown root:tomcat /etc/gpioflow/db.conf
-sudo chmod 600 /etc/gpioflow/db.conf
+sudo chmod 640 /etc/gpioflow/db.conf
 
 echo "[gpioflow] secure DB config created in /etc/gpioflow/db.conf"
 
