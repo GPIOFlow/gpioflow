@@ -16,6 +16,7 @@ echo ""
 echo "Use GPIOFlow only in environments where failure would not result in harm, injury, or significant damage."
 echo "The developer disclaims all liability for any damage caused by the software, including data loss, system failures, or hardware malfunctions."
 echo "=========================================================="
+echo "⚠️  WARNING: Intended for fresh systems. Existing Tomcat installations will be overwritten."
 
 # ==========================================================
 # The rest of your script will continue here:
@@ -138,13 +139,6 @@ mysql_cmd < "${SQL_LOCAL}"
 
 
 
-# -------------------------
-# Ensure Tomcat user & group exist
-# -------------------------
-if ! id -u tomcat >/dev/null 2>&1; then
-    echo "[gpioflow] creating tomcat user and group..."
-    sudo useradd -r -m -U -d /opt/tomcat -s /usr/sbin/nologin tomcat
-fi
 
 # -------------------------
 # Create secure DB config
@@ -169,21 +163,6 @@ echo "[gpioflow] secure DB config created in /etc/gpioflow/db.conf"
 
 
 
-# ==========================================================
-# Create / ensure app DB user (after schema import)
-# ==========================================================
-log "create secure DB config in /etc/gpioflow/db.conf"
-mkdir -p /etc/gpioflow
-DB_PASS_GENERATED="$(openssl rand -base64 16)"
-
-cat > /etc/gpioflow/db.conf <<EOF
-DB_USER=${DB_USER}
-DB_PASS=${DB_PASS_GENERATED}
-DB_NAME=${DB_NAME}
-EOF
-
-chown root:root /etc/gpioflow/db.conf
-chmod 640 /etc/gpioflow/db.conf
 # Optional: Gruppe auf Tomcat setzen, damit App lesen kann
 chgrp ${TOMCAT_USER} /etc/gpioflow/db.conf
 
