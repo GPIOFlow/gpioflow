@@ -284,13 +284,6 @@ systemctl enable pigpiod mariadb tomcat9
 log "start tomcat9"
 systemctl start tomcat9
 
-# ==========================================================
-# Clean up history / logs
-# ==========================================================
-log "clean up sensitive history/logs"
-history -c
-rm -f /root/.bash_history /root/.mysql_history
-sudo truncate -s 0 /var/log/mysql/error.log /var/log/syslog || true
 
 # ==========================================================
 # Done
