@@ -172,6 +172,18 @@ sudo chmod 640 /etc/gpioflow/db.conf
 
 echo "[gpioflow] secure DB config created in /etc/gpioflow/db.conf"
 
+# ----------------------------------------------------------
+# Create secure runtime state dir (device.id, license.json)
+# ----------------------------------------------------------
+mkdir -p /etc/gpioflow/state
+
+# Tomcat (Java) darf hier lesen + schreiben
+chown tomcat:tomcat /etc/gpioflow/state
+chmod 700 /etc/gpioflow/state
+
+# Root behält Kontrolle über den Config-Ordner selbst
+chown root:root /etc/gpioflow
+chmod 755 /etc/gpioflow
 
 
 
