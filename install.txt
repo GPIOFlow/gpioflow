@@ -96,6 +96,9 @@ mysql_cmd() {
 # ==========================================================
 require_root
 
+if ! id -u "${TOMCAT_USER}" >/dev/null 2>&1; then
+  useradd -r -m -U -d "${TOMCAT_DIR}" -s /usr/sbin/nologin "${TOMCAT_USER}"
+fi
 
 if systemctl list-unit-files | grep -q '^tomcat9\.service'; then
     echo "[gpioflow] ⚠️ Tomcat9 Service existiert bereits. Installation wird abgebrochen."
@@ -201,9 +204,7 @@ EOF
 # Tomcat install (tarball)
 # ==========================================================
 log "ensure tomcat user exists"
-if ! id -u "${TOMCAT_USER}" >/dev/null 2>&1; then
-  useradd -r -m -U -d "${TOMCAT_DIR}" -s /usr/sbin/nologin "${TOMCAT_USER}"
-fi
+
 
 log "download & install Tomcat ${TOMCAT_VER} to ${TOMCAT_DIR}"
 cd /tmp
