@@ -16,7 +16,7 @@ echo ""
 echo "Use GPIOFlow only in environments where failure would not result in harm, injury, or significant damage."
 echo "The developer disclaims all liability for any damage caused by the software, including data loss, system failures, or hardware malfunctions."
 echo "=========================================================="
-echo "  WARNING: Intended for fresh systems. Existing Tomcat installations will be overwritten."
+
 
 # ==========================================================
 # The rest of your script will continue here:
