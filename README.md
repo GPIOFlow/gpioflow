@@ -1,8 +1,9 @@
 
-Web-based GPIO and PWM control for Raspberry Pi with image-based buttons, manual triggers, timers and intervals
+Web-based GPIO and Pulse Control for Raspberry Pi with image-based buttons, manual triggers, timers and intervals
+
 **# GpioFlow
 
-🚀 **Web-based GPIO & PWM control software for Raspberry Pi with a dynamic, configurable frontend.**
+🚀 **Web-based GPIO & Precision  Pulse control software for Raspberry Pi with a dynamic, configurable frontend.**
 
 ---
 <img width="1453" height="788" alt="web-ui-demo" src="https://github.com/user-attachments/assets/11c762f4-9667-4149-8001-b7c38272abc9" />
@@ -10,7 +11,7 @@ Web-based GPIO and PWM control for Raspberry Pi with image-based buttons, manual
 
 ## 🔌 What is GpioFlow?
 
-**GpioFlow** is a commercial software solution that allows you to control Raspberry Pi GPIO and PWM pins through a modern, web-based user interface — **no programming required**. 
+**GpioFlow** is a commercial software solution that allows you to control Raspberry Pi GPIO and Pulse control pins through a modern, web-based user interface — **no programming required**. 
 
 Create interactive control panels using buttons and images, define GPIO actions, and automate timed pin behavior with just a few clicks (click & action, timers and intervals).
 
@@ -39,7 +40,7 @@ GpioFlow solves this by providing:
 - A configurable web-based frontend
 - Visual button and image-based controls
 - Dynamic GPIO-to-action mapping
-- Timed GPIO & PWM activation per interaction
+- Timed GPIO & Pulse control activation per interaction
 - Clean frontend / backend separation
 
 All configuration is done **without touching the code**.
@@ -48,7 +49,7 @@ All configuration is done **without touching the code**.
 
 ## ⭐ Key Features
 
-- 🌐 Web-based GPIO & PWM control for Raspberry Pi  
+- 🌐 Web-based GPIO & pulse-based control for Raspberry Pi 
 - 🎛️ Dynamic UI with custom buttons and images  
 - ⏱️ Configurable GPIO activation timing  
 - 🔁 Flexible pin-to-action mapping  
@@ -66,6 +67,16 @@ All configuration is done **without touching the code**.
 - Companies building Raspberry Pi-based products  
 
 ---
+
+
+
+## ⚙️ About Pulse Control (PWM)
+
+GpioFlow uses PWM internally to generate precise pulse-width signals for servo motors and electronic speed controllers (ESCs).
+The pulse generation is handled by the pigpio daemon and is DMA-based, providing stable timing independent of application load.
+
+This pulse control is intended for servo and actuator control, not for high-power dimming or safety-critical motor control.
+
 
 ## 📦 Availability & Licensing
 
